@@ -36,7 +36,7 @@ export default function Home() {
           <div className='text-center p-10'>
             <h2 className='text-5xl py-2 text-violet-600 font-medium md:text-6xl'>Rizky Ramadhan</h2>
             <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Machine Learning Developer and Data Scientist</h3>
-            
+
             <p className='text-justify text-xl py-5 leading-8 text-gray-800 md:text-2xl max-w-lg mx-auto dark:text-white'>
               Welcome to my portfolio website👋
               <br />
@@ -48,7 +48,7 @@ export default function Home() {
               <a href="https://github.com/rizr09/" target="_blank" rel='noreferrer noopener' ><AiFillGithub /></a>
               <a href="https://www.linkedin.com/in/rizr09/" target="_blank" rel='noreferrer noopener' ><AiFillLinkedin /></a>
             </div>
-            <NowPlaying className='bg-gray-900'/> 
+            <NowPlaying className='bg-gray-900' />
             <div className='relative flex items-center bg-gradient-to-b from-indigo-600 to-purple-600 rounded-full mt-10 overflow-hidden md:h-96 md:w-96 sm:h-64 sm:w-64 lg:mx-auto'>
               <Image src={me} style={{ objectFit: "cover" }} alt="me" />
             </div>
@@ -65,7 +65,7 @@ export default function Home() {
             </p>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
               Through these experiences, I have also <span className='underline decoration-pink-600'>gained valuable skills in data mining and robot-building</span>, as demonstrated by my participation in Gemastik 2022 and KRI 2022.
-              Currently, I am working as a lab assistant and am <span className='underline decoration-pink-600'>excited to continue my studies in artificial intelligence</span> in the coming semester.
+              Currently, I am working as a lab assistant and am <span className='underline decoration-pink-600'>excited to continue my studies in artificial intelligence</span> in the coming semesters.
             </p>
           </div>
         </section>
