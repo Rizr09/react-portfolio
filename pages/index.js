@@ -8,6 +8,7 @@ import pbo from '../public/pbo.png';
 import urban from '../public/urban.png';
 import AnimeDB from '../public/AnimeDB.png';
 import { useState } from "react";
+import NowPlaying from './api/spotify';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -34,8 +35,10 @@ export default function Home() {
           </nav>
           <div className='text-center p-10'>
             <h2 className='text-5xl py-2 text-violet-600 font-medium md:text-6xl'>Rizky Ramadhan</h2>
-            <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Machine Learning Developer and Data Scientist<br />Welcome to my portfolio website👋</h3>
-            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white'>
+            <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Machine Learning Developer and Data Scientist</h3>
+            
+            <p className='text-justify text-xl py-5 leading-8 text-gray-800 md:text-2xl max-w-lg mx-auto dark:text-white'>
+              Welcome to my portfolio website👋
               <br />
               You can call me Rizky. I am a sophomore informatics student at Padjadjaran University. I graduated from SMAN 3 Bandung in 2021 and am currently interested in robotic process automation, front-end web development, and
               <a className='text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600' href='https://i.imgur.com/1rTHvw5.png' target='_blank' rel="noreferrer noopener"> stable diffusion.</a>
@@ -45,7 +48,8 @@ export default function Home() {
               <a href="https://github.com/rizr09/" target="_blank" rel='noreferrer noopener' ><AiFillGithub /></a>
               <a href="https://www.linkedin.com/in/rizr09/" target="_blank" rel='noreferrer noopener' ><AiFillLinkedin /></a>
             </div>
-            <div className='relative flex items-center bg-gradient-to-b from-indigo-600 to-purple-600 rounded-full mt-20 overflow-hidden md:h-96 md:w-96 sm:h-64 sm:w-64 lg:mx-auto'>
+            <NowPlaying className='bg-gray-900'/> 
+            <div className='relative flex items-center bg-gradient-to-b from-indigo-600 to-purple-600 rounded-full mt-10 overflow-hidden md:h-96 md:w-96 sm:h-64 sm:w-64 lg:mx-auto'>
               <Image src={me} style={{ objectFit: "cover" }} alt="me" />
             </div>
           </div>
@@ -76,7 +80,7 @@ export default function Home() {
               </p>
               <h4 className='py-4 text-purple-600'>Tech I use</h4>
               <p className='text-gray-800 py-1'>Java with JavaFx</p>
-              <p className='text-gray-800 py-1'>Gluon Scenebuilder</p>
+              <p className='text-gray-800 py-1'>Gluon Scene Builder</p>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-300'>
               <Image src={urban} alt="pbo" width={300} height={300} className="mx-auto" />
@@ -85,10 +89,10 @@ export default function Home() {
                 A simple application that uses the Python and Urban Dictionary API to search for definitions of words or phrases
               </p>
               <h4 className='py-4 text-purple-600'>Tech I use</h4>
-              <p className='text-gray-800 py-1'>Python</p>
-              <p className='text-gray-800 py-1'>Tkinker</p>
-              <p className='text-gray-800 py-1'>Tkdesigner library</p>
-              <p className='text-gray-800 py-1'>Requests library</p>
+              <p className='text-gray-800 py-1'>Figma</p>
+              <p className='text-gray-800 py-1'>Python with Tkinker</p>
+              <p className='text-gray-800 py-1'>Tkdesigner</p>
+              <p className='text-gray-800 py-1'>Requests</p>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-300'>
               <Image src={AnimeDB} alt="pbo" width={300} height={300} className="mx-auto" />
