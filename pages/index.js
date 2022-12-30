@@ -7,7 +7,7 @@ import me from '../public/me.png';
 import pbo from '../public/pbo.png';
 import urban from '../public/urban.png';
 import AnimeDB from '../public/AnimeDB.png';
-import {useState} from "react";
+import { useState } from "react";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -45,8 +45,8 @@ export default function Home() {
               <a href="https://github.com/rizr09/" target="_blank" rel='noreferrer noopener' ><AiFillGithub /></a>
               <a href="https://www.linkedin.com/in/rizr09/" target="_blank" rel='noreferrer noopener' ><AiFillLinkedin /></a>
             </div>
-            <div className='relative mx-auto bg-gradient-to-b from-indigo-600 to-purple-600 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
-              <Image src={me} fill style={{ objectFit: "cover" }} alt="me" />
+            <div className='relative flex items-center bg-gradient-to-b from-indigo-600 to-purple-600 rounded-full mt-20 overflow-hidden md:h-96 md:w-96 sm:h-64 sm:w-64 lg:mx-auto'>
+              <Image src={me} style={{ objectFit: "cover" }} alt="me" />
             </div>
           </div>
         </section>
