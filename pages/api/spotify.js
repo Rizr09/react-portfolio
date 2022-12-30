@@ -7,7 +7,8 @@ const NowPlaying = () => {
     return (
         <div className='flex mt-5 content-center'>
             <div className='mx-auto bg-gray-900 rounded-lg shadow-xl p-5 dark:bg-gray-800'>
-                <ReactMarkdown children={markdown} />
+                {// eslint-disable-next-line
+                <ReactMarkdown children={markdown} />}
             </div>
         </div>
     );
