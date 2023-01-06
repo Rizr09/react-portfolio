@@ -6,7 +6,7 @@ import Image from 'next/image'
 import me from '../public/me.png';
 import pbo from '../public/pbo.png';
 import urban from '../public/urban.png';
-import AnimeDB from '../public/AnimeDB.png';
+import AnimeDB from '../public/landing.png';
 import { useState } from "react";
 import NowPlaying from './api/spotify';
 
@@ -34,10 +34,10 @@ export default function Home() {
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-violet-600 font-medium md:text-6xl'>Rizky Ramadhan</h2>
+            <h2 className='text-5xl py-2 text-violet-600 font-medium md:text-6xl sm:text-3xl'>Rizky Ramadhan</h2>
             <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Machine Learning Developer and Data Scientist</h3>
 
-            <p className='text-justify text-xl py-5 leading-8 text-gray-800 md:text-2xl max-w-lg mx-auto dark:text-white'>
+            <p className='text-left text-xl py-5 leading-8 text-gray-800 md:text-2xl max-w-lg mx-auto dark:text-white'>
               Welcome to my portfolio website👋
               <br />
               You can call me Rizky. I am a sophomore informatics student at Padjadjaran University. I graduated from SMAN 3 Bandung in 2021 and am currently interested in robotic process automation, front-end web development, and
@@ -49,7 +49,7 @@ export default function Home() {
               <a href="https://www.linkedin.com/in/rizr09/" target="_blank" rel='noreferrer noopener' ><AiFillLinkedin /></a>
             </div>
             <NowPlaying className='bg-gray-900' />
-            <div className='relative flex items-center bg-gradient-to-b from-indigo-600 to-purple-600 rounded-full mt-10 overflow-hidden md:h-96 md:w-96 sm:h-64 sm:w-64 lg:mx-auto'>
+            <div className='relative flex items-center bg-gradient-to-b from-indigo-600 to-purple-600 rounded-full mt-10 overflow-hidden md:h-96 md:w-96 sm:h-64 sm:w-64 lg:mx-auto md:mx-auto'>
               <Image src={me} style={{ objectFit: "cover" }} alt="me" />
             </div>
           </div>
@@ -78,9 +78,7 @@ export default function Home() {
               <p className='py-2'>
                 Turn-based GUI game for PC with random events as challenges
               </p>
-              <h4 className='py-4 text-purple-600'>Tech I use</h4>
-              <p className='text-gray-800 py-1'>Java with JavaFx</p>
-              <p className='text-gray-800 py-1'>Gluon Scene Builder</p>
+              <h4 className='py-4 text-purple-600'>Java • JavaFx • Gluon Scene Builder</h4>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-300'>
               <Image src={urban} alt="pbo" width={300} height={300} className="mx-auto" />
@@ -88,11 +86,7 @@ export default function Home() {
               <p className='py-2'>
                 A simple application that uses the Python and Urban Dictionary API to search for definitions of words or phrases
               </p>
-              <h4 className='py-4 text-purple-600'>Tech I use</h4>
-              <p className='text-gray-800 py-1'>Figma</p>
-              <p className='text-gray-800 py-1'>Python with Tkinker</p>
-              <p className='text-gray-800 py-1'>Tkdesigner</p>
-              <p className='text-gray-800 py-1'>Requests</p>
+              <h4 className='py-4 text-purple-600'>Figma • Python • Tkinker & Tkdesigner • Requests</h4>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-300'>
               <Image src={AnimeDB} alt="pbo" width={300} height={300} className="mx-auto" />
@@ -100,10 +94,7 @@ export default function Home() {
               <p className='py-2'>
                 CRUD web application to manage your anime watchlist
               </p>
-              <h4 className='py-4 text-purple-600'>Tech I use</h4>
-              <p className='text-gray-800 py-1'>CodeIgniter 4</p>
-              <p className='text-gray-800 py-1'>MySQL</p>
-              <p className='text-gray-800 py-1'>Tailwind CSS</p>
+              <h4 className='py-4 text-purple-600'>CodeIgniter 4 • MySQL • Tailwind CSS</h4>
             </div>
           </div>
         </section>
